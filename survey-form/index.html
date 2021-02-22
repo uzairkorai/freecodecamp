@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="main">
+      <div>
+        <h1 id="title">Survey Form</h1>
+        <p id="title-info">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat.
+        </p>
+      </div>
+      <div id="form">
+        <p id="description">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy.
+        </p>
+
+        <form id="survey-form">
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label">First Name: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                autofocus
+                type="text"
+                name="name"
+                id="name"
+                class="input-field"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label id="email-label">Email: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                id="email"
+                autofocus
+                type="email"
+                name="name"
+                id="name"
+                class="input-field"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label id="number-label">Age: </label>
+            </div>
+            <div class="rightTab">
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="1"
+                max="125"
+                class="input-field"
+                placeholder="Age"
+              />
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="currentPos"
+                >Whats your current professional experience?</label
+              >
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="currentPos" class="dropdown">
+                <option disabled selected value>Student</option>
+                <option value="CSS">Recent Graduate</option>
+                <option value="HTML">Beginner Developer</option>
+                <option value="JavaScript">Intermediate Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="userRating">Gender:</label>
+            </div>
+            <div class="rightTab">
+              <ul style="list-style: none">
+                <li class="radio">
+                  <label>
+                    <input
+                      name="radio-buttons"
+                      value="1"
+                      type="radio"
+                      class="userRating"
+                    />Male
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>
+                    <input
+                      name="radio-buttons"
+                      value="1"
+                      type="radio"
+                      class="userRating"
+                    />Female
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label>What is the most useful coding language:</label>
+            </div>
+            <div class="rightTab">
+              <select id="dropdown" name="mostUseful" class="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="Python">JavaScript</option>
+                <option value="web apps">HTML5</option>
+                <option value="web apps">React</option>
+                <option value="web apps">Redux</option>
+                <option value="Python">Python</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="preferences"
+                >A Complete List of Computer Programming Languages</label
+              >
+              <br />
+              (Interpreted Programming Languages):
+            </div>
+            <div>
+              <ul id="preferences" style="list-style: none">
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />SQL
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />Java
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />JavaScript
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />C++
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />Python
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />PHP
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label>
+                    <input
+                      name="prefer"
+                      value="2"
+                      type="checkbox"
+                      class="userRating"
+                    />iOS/Swift
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rowTab">
+            <div class="labels">
+              <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="rightTab">
+              <textarea
+                id="comments"
+                name="comment"
+                class="input-field"
+                placeholder="Enter your comments here.."
+                style="height: 50px"
+              ></textarea>
+            </div>
+          </div>
+
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

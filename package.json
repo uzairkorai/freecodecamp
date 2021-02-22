@@ -1,0 +1,19 @@
+{
+  "name": "fcc",
+  "version": "1.0.0",
+  "description": "learning and certifications from FCC",
+  "main": "./index.html",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzairkorai/freeCodeCamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "devDependencies": {},
+  "dependencies": {}
+}
